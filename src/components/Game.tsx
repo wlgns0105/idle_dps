@@ -1,9 +1,8 @@
-import React from 'react'
 import GameCanvas from './GameCanvas'
 import GameUI from './GameUI'
 import { useGameStore } from '../stores/gameStore'
 
-const Game: React.FC = () => {
+const Game = () => {
   const { isGameStarted } = useGameStore()
 
   return (

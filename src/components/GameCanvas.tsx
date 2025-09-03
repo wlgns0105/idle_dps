@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import { useGameStore } from '../stores/gameStore'
 
-const GameCanvas: React.FC = () => {
+const GameCanvas = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const { isGameStarted } = useGameStore()
 
